@@ -1,10 +1,6 @@
 <?php
 
-$conect = mysqli_connect('localhost', 'root', '', 'introducao');
-
-if ($conect->connect_errno) {
-    die('Erro ao tentar conectar');
-}
+require_once("conexao.php");
 
 if ($_GET) {
     $sql = "SELECT * FROM pessoa where id = {$_GET['id']}";
