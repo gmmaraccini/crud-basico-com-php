@@ -1,6 +1,6 @@
 <?php
 
-$conect = mysqli_connect('localhost', 'root', '884191', 'introducao');
+$conect = mysqli_connect('localhost', 'root', '', 'introducao');
 
 if ($conect->connect_errno) {
     die('Erro ao tentar conectar');
